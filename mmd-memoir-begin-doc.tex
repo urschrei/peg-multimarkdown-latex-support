@@ -1,25 +1,26 @@
 %
-%	Get ready for the actual document
+%   Get ready for the actual document
 %
 
+% Support for hyperlinks, load after biblatex
 \usepackage[
-	plainpages=false,
-	pdfpagelabels,
-	pdftitle={\mytitle},
-	pagebackref,
-	pdfauthor={\myauthor},
-	pdfkeywords={\keywords}
-	]{hyperref}
-\usepackage{memhfixc}
+pdfborder={0 0 0},
+colorlinks=true,
+linkcolor=MidnightBlue,
+citecolor=MidnightBlue,
+urlcolor=MidnightBlue]{hyperref}
+% Set the PDF strings as Unicode
+\hypersetup{unicode=true}
 
 
 \input{mmd-title}
 \title{\mytitle}
 \author{\myauthor}
+\def\mykeywords{}
 
 \ifx\theme\undefined
 \else
-	\usetheme{\theme}
+    \usetheme{\theme}
 \fi
 
 \begin{document}
