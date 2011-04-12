@@ -2,24 +2,26 @@
 %	For setup that must follow metadata included in the document
 %
 
-\usepackage[
-	plainpages=false,
-	pdfpagelabels,
-	pdftitle={\mytitle},
-	pagebackref,
-	pdfauthor={\myauthor},
-	pdfkeywords={\keywords}
-	]{hyperref}
-\usepackage{memhfixc}
 
+\usepackage[
+pdfborder={0 0 0},
+colorlinks=true,
+linkcolor=MidnightBlue,
+citecolor=MidnightBlue,
+urlcolor=MidnightBlue]{hyperref}
+% Set the PDF strings as Unicode
+\hypersetup{unicode=true}
 
 \input{mmd-title}
-
+\bibliocommand
 
 \begin{document}
 
 \title{\mytitle}
 \author{\myauthor}
+
+\chapterstyle{\mychapterstyle}
+\pagestyle{\mypagestyle}
 
 \mainmatter
 \maketitle
@@ -34,4 +36,5 @@
 \fi
 
 \setlength{\parindent}{1em}
+\newpage
 
