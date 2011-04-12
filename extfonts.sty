@@ -1,0 +1,37 @@
+% Define fonts
+\usepackage{microtype} % nicer typography, doesn't work with TeXLive 2009 (will work with 2010)
+% \SetTracking[ spacing = {150*, , } ]{ encoding = *, shape = sc }{ 150 } % testing values only
+\usepackage{fontspec}
+\usepackage{xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[Ligatures={Common},Numbers={OldStyle},BoldFont={Garamond Premier Pro Semibold}]{Adobe Garamond Pro} % Numbers={OldStyle} for instance
+% don't forget about the \addfontfeature command
+\setsansfont[Scale=MatchUppercase]{Univers 45 Light}
+% Helvetica Neue Medium is also good
+\setmonofont{Inconsolata}
+\setlength\fboxsep{0pt}
+% \usepackage{draftwatermark}  	% Place DRAFT watermark on doc
+
+% Serif font suggestions:
+% Adobe Garamond Pro
+% Garamond Premier Pro (nicer than above)
+% Bembo Book MT Pro
+% TeX Gyre Pagella
+% Minion Pro
+% Adobe Caslon Pro
+% Hoefler Text
+% Gentium Book Basic
+% Charis SIL (works with microtype)
+% Goudy Bookletter 1911
+% Cardo (similar to Bembo, more restrained, use for Greek and Latin letterforms)
+% FF Scala (don't have)
+% IM FELL French Canon PRO (also see IM FELL FLOWERS 2 for decoration (there's an SEAC problem with these, though)
+% Goudy Old Style
+
+% Sans Serif font suggestions:
+% Helvetica Neue (and plain Helvetica)
+% Futura
+% Optima
+% GoudySans
+% Univers
+% Gotham
