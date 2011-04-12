@@ -1,5 +1,5 @@
 %
-%   Default packages for memoir documents created by MultiMarkdown
+% Default packages for memoir documents created by MultiMarkdown
 %
 \usepackage{polyglossia} % XeTeX replacement for Babel
 \setmainlanguage[variant=british]{english} % Polyglossia command
@@ -7,7 +7,6 @@
 % Fonts
 \usepackage{extfonts} % simple sty file which must be in your TeX path, define your fonts there
 
-%\usepackage{fancyvrb}          % Allow \verbatim et al. in footnotes
 \usepackage{graphicx}           % To include graphics in pdfs (jpg, gif, png)
 \usepackage{booktabs}           % Better tables
 \usepackage{tabulary}           % Support longer table cells
@@ -26,10 +25,13 @@
 % == OR ==
 
 % Change ‘notes’ to ‘authordate’ if you wish
-\usepackage[notes,strict,autocite=footnote,backref=true,%
-hyperref=true,autocite=footnote,backend=biber,bibencoding=UTF-8]%
-{biblatex-chicago}
+\usepackage[
+notes,
+strict,
+backref=true,
+hyperref=true,
+autocite=footnote,
+backend=biber,
+bibencoding=UTF-8]{biblatex-chicago}
 
-%\def\mybibliostyle{plain}
 \def\bibliocommand{}
-%\VerbatimFootnotes
