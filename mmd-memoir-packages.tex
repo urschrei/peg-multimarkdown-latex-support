@@ -20,18 +20,24 @@
 % ==============================================================================
 % Pick one of the below to switch between MLA and Chicago styles
 
-%\usepackage[style=mla,autocite=footnote,backref=true,backend=biber]{biblatex}
+\usepackage[
+style=mla,
+autocite=footnote,
+backref=true,
+backend=biber]{biblatex}
+% Temporary compatibility fix for Biblatex and Biblatex-MLA
+\DeclareAutoCiteCommand{footnote}[f]{\footcite}{\footcites}
 
 % == OR ==
 
 % Change ‘notes’ to ‘authordate’ if you wish
-\usepackage[
-notes,
-strict,
-backref=true,
-hyperref=true,
-autocite=footnote,
-backend=biber,
-bibencoding=UTF-8]{biblatex-chicago}
+% \usepackage[
+% notes,
+% strict,
+% backref=true,
+% hyperref=true,
+% autocite=footnote,
+% backend=biber,
+% bibencoding=UTF-8]{biblatex-chicago}
 
 \def\bibliocommand{}
