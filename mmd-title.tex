@@ -32,6 +32,11 @@
 	\addtodef{\myauthor}{}{ \\ \email}
 \fi
 
+\ifx\studentnumber\undefined
+\else
+	\addtodef{\myauthor}{}{ \\ \studentnumber}
+\fi
+
 \ifx\event\undefined
 \else
 	\date[\mydate]{\today}
